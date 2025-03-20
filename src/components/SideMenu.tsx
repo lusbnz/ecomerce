@@ -6,7 +6,7 @@ import { StoreState } from "types";
 
 const SideMenu = () => {
   const { userInfo, productData } = useSelector(
-    (state: StoreState) => state?.bazar
+    (state: StoreState) => state?.common
   );
 
   return (

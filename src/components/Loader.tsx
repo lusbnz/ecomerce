@@ -11,7 +11,7 @@ const Loader = ({ className }: { className?: string }) => {
     >
       <div className="text-center">
         <Loader2 className="w-16 h-16 animate-spin mx-auto mb-4" />
-        <h2 className="text-2xl font-semibold mb-2">Bazar is loading...</h2>
+        <h2 className="text-2xl font-semibold mb-2">Loading...</h2>
         <p className="text-blue-700">
           Please wait while we fetch the latest deals for you.
         </p>

@@ -15,7 +15,7 @@ import { PenSquare, Plus } from "lucide-react";
 import Container from "@/components/Container";
 import { useDispatch, useSelector } from "react-redux";
 import { StoreState } from "types";
-import { removeUser } from "@/redux/bazarSlice";
+import { removeUser } from "@/redux/commonSlice";
 import Loader from "@/components/Loader";
 import { useNavigate } from "react-router";
 import _ from "lodash";
@@ -50,7 +50,7 @@ const userData = {
 
 const Profile: React.FC = () => {
   const [addresses, setAddresses] = useState(userData.addresses);
-  const { userInfo } = useSelector((state: StoreState) => state?.bazar);
+  const { userInfo } = useSelector((state: StoreState) => state?.common);
   const dispatch = useDispatch();
 
   const navigate = useNavigate();

@@ -10,8 +10,8 @@ const initialState: InitialStateProps = {
   userInfo: null,
 };
 
-export const bazarSlice = createSlice({
-  name: "bazar",
+export const commonSlice = createSlice({
+  name: "common",
   initialState,
   reducers: {
     addToCart: (state, action) => {
@@ -70,6 +70,6 @@ export const {
   decrementQuantity,
   addUser,
   removeUser,
-} = bazarSlice.actions;
+} = commonSlice.actions;
 
-export default bazarSlice.reducer;
+export default commonSlice.reducer;

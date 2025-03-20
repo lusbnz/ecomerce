@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "../redux/bazarSlice";
+import { addToCart } from "../redux/commonSlice";
 import toast from "react-hot-toast";
 import { ProductsType, StoreState } from "types";
 import QuantityButton from "@/components/QuantityButton";
@@ -43,7 +43,7 @@ const dummyProduct = {
 };
 const Product = () => {
   const [product, setProduct] = useState<ProductsType | null>(null);
-  const { productData } = useSelector((state: StoreState) => state.bazar);
+  const { productData } = useSelector((state: StoreState) => state.common);
   const [existingProduct, setExistingProduct] = useState<ProductsType | null>(
     null
   );

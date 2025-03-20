@@ -2,14 +2,14 @@ import { MdOutlineClose } from "react-icons/md";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import { Link } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
-import { deleteItem, resetCart } from "../redux/bazarSlice";
+import { deleteItem, resetCart } from "../redux/commonSlice";
 import { ProductsType, StoreState } from "types";
 import toast from "react-hot-toast";
 import QuantityButton from "./QuantityButton";
 
 const CartItem = () => {
   const dispatch = useDispatch();
-  const { productData } = useSelector((state: StoreState) => state.bazar);
+  const { productData } = useSelector((state: StoreState) => state.common);
   const handleResetCart = () => {
     const confirmed = window.confirm("Are you sure to reset your cart?");
     if (confirmed) {

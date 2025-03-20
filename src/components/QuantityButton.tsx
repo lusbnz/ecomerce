@@ -1,4 +1,4 @@
-import { decrementQuantity, incrementQuantity } from "@/redux/bazarSlice";
+import { decrementQuantity, incrementQuantity } from "@/redux/commonSlice";
 import toast from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { twMerge } from "tailwind-merge";

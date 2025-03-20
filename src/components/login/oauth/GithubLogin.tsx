@@ -2,7 +2,7 @@ import { signInWithPopup } from "firebase/auth";
 import { useState } from "react";
 import { auth, githubProvider } from "../../../../firebase";
 import { useDispatch } from "react-redux";
-import { addUser, removeUser } from "@/redux/bazarSlice";
+import { addUser, removeUser } from "@/redux/commonSlice";
 import { useNavigate } from "react-router";
 import { FaGithub } from "react-icons/fa";
 const GithubLogin = () => {

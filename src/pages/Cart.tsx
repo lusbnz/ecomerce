@@ -11,7 +11,7 @@ import { Loader } from "lucide-react";
 const Cart = () => {
   const [loading, setLoading] = useState(false);
   const { productData, userInfo } = useSelector(
-    (state: StoreState) => state.bazar
+    (state: StoreState) => state.common
   );
   // const public_key = import.meta.env.VITE_PUBLIC_URL;
 

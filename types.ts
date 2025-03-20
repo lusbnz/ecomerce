@@ -21,7 +21,7 @@ export interface UserInfo {
 }
 
 export interface StoreState {
-  bazar: {
+  common: {
     productData: ProductsType[];
     userInfo: UserInfo;
   };

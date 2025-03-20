@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FcGoogle } from "react-icons/fc";
 import { auth, googleProvider } from "../../../../firebase";
 import { useDispatch } from "react-redux";
-import { addUser, removeUser } from "@/redux/bazarSlice";
+import { addUser, removeUser } from "@/redux/commonSlice";
 import { useNavigate } from "react-router";
 const GoogleLogin = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);

@@ -9,7 +9,7 @@ import _ from "lodash";
 
 const MobileNav = ({ pathname }: { pathname: string }) => {
   const [showMenu, setShowMenu] = useState(false);
-  const { userInfo } = useSelector((state: StoreState) => state?.bazar);
+  const { userInfo } = useSelector((state: StoreState) => state?.common);
   return (
     <div className="md:hidden">
       <button

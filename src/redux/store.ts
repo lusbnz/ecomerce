@@ -10,17 +10,17 @@ import {
   REGISTER,
 } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import bazarReducer from "./bazarSlice";
+import commonReducer from "./commonSlice";
 
 const persistConfig = {
   key: "root",
   version: 1,
   storage,
 };
-const persistedReducer = persistReducer(persistConfig, bazarReducer);
+const persistedReducer = persistReducer(persistConfig, commonReducer);
 
 export const store = configureStore({
-  reducer: { bazar: persistedReducer },
+  reducer: { common: persistedReducer },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {

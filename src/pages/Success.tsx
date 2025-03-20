@@ -1,5 +1,5 @@
 import Loading from "@/components/Loading";
-import { resetCart } from "@/redux/bazarSlice";
+import { resetCart } from "@/redux/commonSlice";
 import { CheckCircle } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";

@@ -1,6 +1,6 @@
 import { BsArrowRight } from "react-icons/bs";
 import { useDispatch, useSelector } from "react-redux";
-import { addToCart } from "../redux/bazarSlice";
+import { addToCart } from "../redux/commonSlice";
 import { useNavigate } from "react-router";
 import toast from "react-hot-toast";
 import { ProductsType, StoreState } from "types";
@@ -15,7 +15,7 @@ const ProductsCard = ({ product }: Props) => {
   const [existingProduct, setExistingProduct] = useState<ProductsType | null>(
     null
   );
-  const { productData } = useSelector((state: StoreState) => state.bazar);
+  const { productData } = useSelector((state: StoreState) => state.common);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const _id = product.title;

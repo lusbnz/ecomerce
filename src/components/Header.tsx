@@ -5,14 +5,14 @@ import { headerData } from "@/constants";
 import Container from "./Container";
 import MobileNav from "./MobileNav";
 import _ from "lodash";
-import { cartImg, logoDark } from "@/assets";
+import { cartImg } from "@/assets";
 
 const Header = () => {
   const productData = useSelector(
-    (state: StoreState) => state.bazar.productData
+    (state: StoreState) => state.common.productData
   );
 
-  const { userInfo } = useSelector((state: StoreState) => state.bazar);
+  const { userInfo } = useSelector((state: StoreState) => state.common);
   const { pathname } = useLocation();
 
   return (
@@ -20,7 +20,7 @@ const Header = () => {
       <Container className="max-w-screen-xl h-full mx-auto flex items-center justify-between relative">
         <Link to="/">
           <div>
-            <img className="w-28" src={logoDark} alt="logoDark" />
+            ECOM
           </div>
         </Link>
         <div className="hidden md:inline-flex items-center gap-8">

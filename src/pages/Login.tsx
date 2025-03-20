@@ -13,7 +13,7 @@ import Loader from "@/components/Loader";
 
 const Login = () => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const { userInfo } = useSelector((state: StoreState) => state.bazar);
+  const { userInfo } = useSelector((state: StoreState) => state.common);
   const navigate = useNavigate();
   useEffect(() => {
     if (!_.isEmpty(userInfo)) {
